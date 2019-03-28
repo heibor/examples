@@ -14,7 +14,8 @@ path = "src/server.rs"
 
 [dependencies]
 env_logger = "0.5"
+openssl = { version="0.10" }
 futures = "0.1"
 
 actix = "0.7"
-actix-web = "^0.7"
+actix-web = { version = "^0.7", features=["ssl"] }
